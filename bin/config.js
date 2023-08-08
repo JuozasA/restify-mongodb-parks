@@ -5,7 +5,7 @@ var autoconfig = function (config_overrides){
     db_svc_name : process.env.DATABASE_SERVICE_NAME || "postgresql"
   })
 
-  var db_config   = config.get('POSTGRESQL_DB_URL'),
+  var db_config   = config.get('db_svc_name'),
       table  = config.get('table_name');
 
   //normalize db connection string
