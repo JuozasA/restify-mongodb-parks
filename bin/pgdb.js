@@ -1,5 +1,5 @@
 var config     = require('./config.js'),
-    pg         = require('pg-query'),
+    pg         = require('pg'),
     path       = require('path');
 var table_name = config.get('table_name');
 
