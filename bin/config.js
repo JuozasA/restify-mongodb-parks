@@ -6,7 +6,7 @@ var autoconfig = function (config_overrides){
   })
 
   var db_config   = config.get('POSTGRESQL_DB_URL'),
-      collection  = config.get('collection_name');
+      table  = config.get('table_name');
 
   //normalize db connection string
   if(db_config[db_config.length - 1] !== "/"){
