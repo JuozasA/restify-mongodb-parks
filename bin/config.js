@@ -12,7 +12,7 @@ var autoconfig = function (config_overrides){
   if(db_config[db_config.length - 1] !== "/"){
     db_config += '/';
   }
-  config.add({db_config: db_config+table_name});
+  config.add({db_config: db_config+table});
   return config;
 }
 exports = module.exports = autoconfig();
